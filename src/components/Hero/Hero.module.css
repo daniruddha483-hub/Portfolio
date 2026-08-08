@@ -1,0 +1,36 @@
+.hero {
+  padding: 80px 40px;
+}
+
+.welcome {
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero h1 span {
+  font-weight: bold;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  cursor: pointer;
+}

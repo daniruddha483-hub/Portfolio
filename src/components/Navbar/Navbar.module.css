@@ -1,0 +1,24 @@
+.navbar {
+  width: 100%;
+  padding: 20px 40px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 40px;
+
+  list-style: none;
+}
+
+.navLinks li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navLinks li:hover {
+  opacity: 0.7;
+}

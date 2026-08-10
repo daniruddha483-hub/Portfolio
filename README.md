@@ -33,22 +33,21 @@ More projects will be added after i'm finished building it.
 
 Clone the repository:
 
-```bash
+
 git clone https://github.com/daniruddha483-hub/Portfolio.git
 cd Portfolio
-```
+
 
 Install the dependencies:
 
-```bash
 npm install
-```
+
 
 Start the development server:
 
-```bash
+
 npm run dev
-```
+
 
 The site will then be available on the local development URL provided by Vite. I will host the website eventually but not at the moment because the website in in development stage so... also this is a project i've built for #beest
 

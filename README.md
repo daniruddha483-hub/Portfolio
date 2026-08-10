@@ -1,10 +1,10 @@
-#Personal Portfolio
+Personal Portfolio
 
 This is my personal portfolio website (my very first website), built to showcase my projects, skills, and works.
 
 The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I wanted to keep the design clean and interactive while also experimenting with animations, glassmorphism, and a space-inspired visual style.
 
-#Tech Stack:
+Tech Stack:
 
 * React
 * TypeScript
@@ -12,7 +12,7 @@ The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I w
 * CSS
 * Vite
 
-# What You'll Find:
+What You'll Find:
 
 * About me
 * Skills and technologies I work with
@@ -20,7 +20,7 @@ The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I w
 * Project details and links
 * Contact information
 
-# Projects:
+Projects:
 
 Some of the projects featured in the portfolio include:
 

@@ -4,7 +4,7 @@ This is my personal portfolio website (my very first website), built to showcase
 
 The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I wanted to keep the design clean and interactive while also experimenting with animations, glassmorphism, and a space-inspired visual style.
 
-#Tech Stack
+#Tech Stack:
 
 * React
 * TypeScript
@@ -12,7 +12,7 @@ The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I w
 * CSS
 * Vite
 
-## What You'll Find
+# What You'll Find:
 
 * About me
 * Skills and technologies I work with
@@ -20,16 +20,16 @@ The portfolio was built from scratch using React, TypeScript, HTML, and CSS. I w
 * Project details and links
 * Contact information
 
-## Projects
+# Projects:
 
 Some of the projects featured in the portfolio include:
 
-* **AirForge** — A touchless CAD sketching application using Python, OpenCV, and MediaPipe.
-* **FitTrack** — A fitness tracking web application built with Flask and SQLite.
+AirForge: — A touchless CAD sketching application using Python, OpenCV, and MediaPipe.
+FitTrack:— A fitness tracking web application built with Flask and SQLite.
 
 More projects will be added after i'm finished building it.
 
-## Running Locally
+Running Locally:
 
 Clone the repository:
 

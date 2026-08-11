@@ -3,19 +3,44 @@ import styles from "./About.module.css";
 function About() {
   return (
     <section className={styles.about}>
-      <h2>About Me</h2>
+      <div className={styles.heading}>
+        <p className={styles.label}>GET TO KNOW ME</p>
 
-      <p>
-        I'm Aniruddha Dhota, a designer and developer who
-        enjoys creating things that combine creativity
-        and technology.
-      </p>
+        <h2>About Me</h2>
 
-      <p>
-        I love exploring new ideas, experimenting with
-        technology, and turning concepts into real
-        projects.
-      </p>
+        <p className={styles.intro}>
+          A little about the person behind the projects.
+        </p>
+      </div>
+
+      <div className={styles.aboutGrid}>
+        <div className={styles.story}>
+          <h3>Who I am</h3>
+
+          <p>
+            I'm Aniruddha Dhota, a designer and developer who
+            enjoys creating things that combine creativity
+            and technology.
+          </p>
+
+          <p>
+            I love exploring new ideas, experimenting with
+            technology, and turning concepts into real
+            projects.
+          </p>
+        </div>
+
+        <div className={styles.focus}>
+          <h3>What I do</h3>
+
+          <div className={styles.focusList}>
+            <span>Design</span>
+            <span>Development</span>
+            <span>Problem Solving</span>
+            <span>Exploration</span>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

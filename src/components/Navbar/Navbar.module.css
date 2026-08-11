@@ -1,24 +1,171 @@
 .navbar {
-  width: 100%;
-  padding: 20px 40px;
+  position: relative;
+
+  top: 9px;
+  left: 50%;
+
+  width: 98%;
+  max-width: 1600px;
+
+  min-height: 76px;
+
+  padding: 0 34px;
 
   display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: space-between;
+
+  transform: translateX(-50%);
+
+  border-radius: 24px;
+
+  z-index: 1000;
+
+  /* Glass */
+  background: rgba(25, 35, 55, 0.48);
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.30),
+    0 20px 55px rgba(0, 0, 0, 0.20),
+    inset 0 1px 1px rgba(255, 255, 255, 0.16);
+
+  transition:
+    transform 0.45s ease,
+    opacity 0.45s ease;
 }
 
-.navLinks {
+
+
+
+.navbar::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(85, 230, 255, 0.05),
+      transparent 35%,
+      rgba(155, 108, 255, 0.08)
+    );
+
+  pointer-events: none;
+}
+
+
+.hidden {
+  transform: translate(-50%, -140%);
+  opacity: 0;
+}
+
+
+
+
+.logo {
+  position: relative;
+
+  font-size: 1.5rem;
+
+  font-weight: 800;
+
+  letter-spacing: 4px;
+
+  background: linear-gradient(
+    90deg,
+    var(--accent-cyan),
+    var(--accent-blue),
+    var(--accent-violet)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 18px rgba(77, 166, 255, 0.25);
+}
+
+
+
+
+.links {
+  position: relative;
+
   display: flex;
-  gap: 40px;
+  align-items: center;
 
-  list-style: none;
+  gap: 42px;
 }
 
-.navLinks li {
-  cursor: pointer;
-  transition: 0.3s;
+
+
+
+.links a {
+  position: relative;
+
+  color: var(--text-primary);
+
+  text-decoration: none;
+
+  font-size: 1.3rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.4px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
 }
 
-.navLinks li:hover {
-  opacity: 0.7;
+
+.links a:hover {
+  color: var(--accent-cyan);
+
+  transform: translateY(-2px);
+}
+
+
+
+.links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    var(--accent-cyan),
+    var(--accent-violet)
+  );
+
+  box-shadow:
+    0 0 8px var(--accent-cyan),
+    0 0 14px var(--accent-violet);
+
+  transition: width 0.3s ease;
+}
+
+
+.links a:hover::after {
+  width: 100%;
 }

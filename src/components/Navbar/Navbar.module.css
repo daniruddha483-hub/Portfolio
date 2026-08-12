@@ -33,7 +33,7 @@
   box-shadow:
     0 10px 25px rgba(0, 0, 0, 0.30),
     0 20px 55px rgba(0, 0, 0, 0.20),
-    inset 0 1px 1px rgba(255, 255, 255, 0.16);
+    inset 0 1px 1px rgba(255, 255, 255, 0.301);
 
   transition:
     transform 0.45s ease,
@@ -55,9 +55,9 @@
   background:
     linear-gradient(
       120deg,
-      rgba(85, 230, 255, 0.05),
+      rgba(85, 229, 255, 0.196),
       transparent 35%,
-      rgba(155, 108, 255, 0.08)
+      rgba(155, 108, 255, 0.21)
     );
 
   pointer-events: none;
@@ -75,7 +75,7 @@
 .logo {
   position: relative;
 
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 
   font-weight: 800;
 
@@ -92,7 +92,7 @@
   -webkit-text-fill-color: transparent;
 
   text-shadow:
-    0 0 18px rgba(77, 166, 255, 0.25);
+    0 0 18px rgba(77, 166, 255, 0.299);
 }
 
 

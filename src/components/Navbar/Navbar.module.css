@@ -22,9 +22,9 @@
   z-index: 1000;
 
   /* Glass */
-  background: rgba(25, 35, 55, 0.48);
+  background: rgba(42, 64, 111, 0.397);
 
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1.25px solid rgb(61, 193, 250);
 
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -55,9 +55,9 @@
   background:
     linear-gradient(
       120deg,
-      rgba(85, 229, 255, 0.196),
+      rgba(85, 229, 255, 0.363),
       transparent 35%,
-      rgba(155, 108, 255, 0.21)
+      rgba(155, 108, 255, 0.322)
     );
 
   pointer-events: none;

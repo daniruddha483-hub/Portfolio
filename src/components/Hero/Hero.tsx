@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Hero.module.css";
-
+import profileImage from "../../assets/images/profile.jpeg";
 function Hero() {
   const fullText =
     "I design ideas, explore technology, and build digital experiences that combine creativity and engineering.";
@@ -25,6 +25,14 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroContent}>
+
+        <div className={styles.profileFrame}>
+          <img
+            src={profileImage}
+            alt="Aniruddha Dhota"
+          />
+        </div>
+
         <p className={styles.welcome}>
           Welcome to my digital space
         </p>
@@ -52,6 +60,7 @@ function Hero() {
             Contact Me
           </button>
         </div>
+
       </div>
     </section>
   );

@@ -1,4 +1,12 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  House,
+  User,
+  Zap,
+  Rocket,
+  Mail
+} from "lucide-react";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
@@ -37,10 +45,30 @@ function Navbar() {
       </div>
 
       <div className={styles.links}>
-        <a href="/">Home</a>
-        <a href="/skills">Skills</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+        <Link to="/">
+          <House size={18} />
+          <span>Home</span>
+        </Link>
+
+        <Link to="/about">
+          <User size={18} />
+          <span>About</span>
+        </Link>
+
+        <Link to="/skills">
+          <Zap size={18} />
+          <span>Skills</span>
+        </Link>
+
+        <Link to="/projects">
+          <Rocket size={18} />
+          <span>Projects</span>
+        </Link>
+
+        <Link to="/contact">
+          <Mail size={18} />
+          <span>Contact</span>
+        </Link>
       </div>
     </nav>
   );

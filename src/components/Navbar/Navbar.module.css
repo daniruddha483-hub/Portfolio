@@ -1,15 +1,15 @@
 .navbar {
   position: fixed;
 
-  top: 12px;
+  top: 0px;
   left: 50%;
 
-  width: 96%;
-  max-width: 1450px;
+  width: 100%;
+  max-width: 1400px;
 
-  min-height: 62px;
+  min-height: 55px;
 
-  padding: 0 28px;
+  padding: 0 26px;
 
   display: flex;
   align-items: center;
@@ -17,20 +17,22 @@
 
   transform: translateX(-50%);
 
-  border-radius: 18px;
+  border-radius: 4.5px;
 
   z-index: 1000;
 
-  background: rgba(25, 42, 72, 0.34);
+  background:
+    rgba(11, 18, 32, 0.048);
 
-  border: 1px solid rgba(85, 210, 255, 0.45);
+  border:
+    1px solid rgba(255, 255, 255, 0.08);
 
-  backdrop-filter: blur(18px);
+  backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(18px);
 
   box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.25),
-    inset 0 1px 1px rgba(255, 255, 255, 0.16);
+    0 10px 35px rgba(0, 0, 0, 0.28),
+    inset 0 1px 1px rgba(255, 255, 255, 0.05);
 
   transition:
     background 0.3s ease,
@@ -50,16 +52,21 @@
   background:
     linear-gradient(
       120deg,
-      rgba(85, 229, 255, 0.10),
-      transparent 40%,
-      rgba(155, 108, 255, 0.08)
+      rgba(85, 229, 255, 0.199),
+      transparent 45%,
+      rgba(155, 108, 255, 0.212)
     );
+
+  box-shadow:
+    inset 0 1px 0 rgba(85, 230, 255, 0.35),
+    inset 0 2px 12px rgba(85, 229, 255, 0.078);
 
   pointer-events: none;
 }
 
 .logo {
   position: relative;
+
   z-index: 1;
 
   font-size: 1.05rem;
@@ -71,39 +78,49 @@
   background:
     linear-gradient(
       90deg,
-      var(--accent-cyan),
-      var(--accent-blue),
-      var(--accent-violet)
+      #55e6ff,
+      #4da6ff,
+      #9b6cff
     );
 
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: turquoise;
 
   filter:
     drop-shadow(
-      0 0 10px rgba(77, 166, 255, 0.25)
+      0 0 8px rgba(85, 229, 255, 0.135)
     );
 }
 
+
+
 .links {
   position: relative;
+
   z-index: 1;
 
   display: flex;
 
   align-items: center;
 
-  gap: 32px;
+  gap: 30px;
 }
+
 
 .links a {
   position: relative;
 
-  color: var(--text-primary);
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #aebbd0;
 
   text-decoration: none;
 
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 
   font-weight: 600;
 
@@ -114,11 +131,21 @@
     transform 0.3s ease;
 }
 
+
+/* =========================
+   LINK HOVER
+========================= */
+
 .links a:hover {
-  color: var(--accent-cyan);
+  color: #55e6ff;
 
   transform: translateY(-2px);
 }
+
+
+/* =========================
+   UNDERLINE
+========================= */
 
 .links a::after {
   content: "";
@@ -126,7 +153,7 @@
   position: absolute;
 
   left: 50%;
-  bottom: -6px;
+  bottom: -7px;
 
   width: 0;
   height: 2px;
@@ -138,21 +165,63 @@
   background:
     linear-gradient(
       90deg,
-      var(--accent-cyan),
-      var(--accent-blue)
+      #55e6ff,
+      #4da6ff,
+      #9b6cff
     );
 
   box-shadow:
-    0 0 7px rgba(85, 230, 255, 0.65);
+    0 0 8px rgba(85, 230, 255, 0.45);
 
-  transition: width 0.3s ease;
+  transition:
+    width 0.3s ease;
 }
+
 
 .links a:hover::after {
   width: 100%;
 }
 
-@media (max-width: 700px) {
+
+/* =========================
+   NAV ICONS
+========================= */
+
+.links a svg {
+  color: #55e6ff;
+
+  filter:
+    drop-shadow(
+      0 0 5px rgba(85, 230, 255, 0.3)
+    );
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease,
+    filter 0.3s ease;
+}
+
+
+.links a:hover svg {
+  color: #9b6cff;
+
+  transform:
+    scale(1.12)
+    rotate(-4deg);
+
+  filter:
+    drop-shadow(
+      0 0 7px rgba(155, 108, 255, 0.5)
+    );
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 750px) {
+
   .navbar {
     top: 10px;
 
@@ -160,7 +229,7 @@
 
     min-height: 56px;
 
-    padding: 0 18px;
+    padding: 0 20px;
 
     border-radius: 16px;
   }
@@ -172,7 +241,7 @@
   }
 
   .links {
-    gap: 18px;
+    gap: 20px;
   }
 
   .links a {
@@ -180,7 +249,13 @@
   }
 }
 
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 500px) {
+
   .navbar {
     width: 92%;
 
@@ -192,10 +267,12 @@
   }
 
   .links a {
-    font-size: 0.75rem;
+    font-size: 0.74rem;
   }
 
   .logo {
-    font-size: 0.8rem;
+    font-size: 0.78rem;
+
+    letter-spacing: 1.5px;
   }
 }

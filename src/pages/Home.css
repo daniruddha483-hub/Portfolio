@@ -1,0 +1,21 @@
+.home-page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      180deg,
+      #071426 0%,
+      #0a1828 28%,
+      #101c29 55%,
+      #1b2027 78%,
+      #211b1a 100%
+    );
+
+  color: #f4fbff;
+
+  overflow: hidden;
+}
+
+.home-page > section {
+  position: relative;
+}

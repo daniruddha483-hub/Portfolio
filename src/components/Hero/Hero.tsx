@@ -1,6 +1,13 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import {
+  FiArrowRight,
+  FiMail,
+} from "react-icons/fi";
+
 import styles from "./Hero.module.css";
 import profileImage from "../../assets/images/profile.jpeg";
+
 function Hero() {
   const fullText =
     "I design ideas, explore technology, and build digital experiences that combine creativity and engineering.";
@@ -52,13 +59,27 @@ function Hero() {
         </p>
 
         <div className={styles.buttons}>
-          <button className={`${styles.button} ${styles.primary}`}>
-            View Projects
-          </button>
+          <Link
+            to="/projects"
+            className={`${styles.button} ${styles.primary}`}
+          >
+            <span>View Projects</span>
 
-          <button className={styles.button}>
-            Contact Me
-          </button>
+            <FiArrowRight
+              className={styles.buttonIcon}
+            />
+          </Link>
+
+          <Link
+            to="/contact"
+            className={styles.button}
+          >
+            <span>Contact Me</span>
+
+            <FiMail
+              className={styles.buttonIcon}
+            />
+          </Link>
         </div>
 
       </div>

@@ -1,10 +1,27 @@
 .navbar {
-  background: red !important;
-  opacity: 1 !important;
+  background: rgba(15, 25, 45, 0.94) !important;
+
+  border:
+    1px solid rgba(85, 210, 255, 0.35);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.40),
+    inset 0 1px 1px rgba(255, 255, 255, 0.12);
 }
 
 .navbar::before {
-  display: none !important;
+  display: block !important;
+
+  background:
+    linear-gradient(
+      120deg,
+      rgba(85, 229, 255, 0.06),
+      transparent 40%,
+      rgba(155, 108, 255, 0.05)
+    );
 }
 
 .logo {

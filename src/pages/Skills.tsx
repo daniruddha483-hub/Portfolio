@@ -1,5 +1,7 @@
 import "./Skills.css";
-
+import EH from "../assets/images/EH.png";
+import AI from "../assets/images/AI.png";
+import LF from "../assets/images/LF.png";
 import {
   FaPython,
   FaReact,
@@ -367,7 +369,7 @@ function Skills() {
 
             <div className="certificate-image">
               <img
-                src="src\assets\images\EH.png"
+                src={EH}
                 alt="Ethical Hacking certificate"
               />
             </div>
@@ -404,7 +406,7 @@ function Skills() {
 
             <div className="certificate-image">
               <img
-                src="\src\assets\images\AI.png"
+                src={AI}
                 alt="IBM AI Fundamentals certificate"
               />
             </div>
@@ -440,7 +442,7 @@ function Skills() {
 
             <div className="certificate-image">
               <img
-                src="src\assets\images\LF.png"
+                src={LF}
                 alt="IBM Lifelong Professional Skills certificate"
               />
             </div>

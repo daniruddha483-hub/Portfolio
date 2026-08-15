@@ -19,14 +19,13 @@
   border-radius: 4.5px;
 
   z-index: 1000;
-
-  background: rgba(15, 25, 45, 0.84);
+  background: rgba(15, 25, 45, 0.96);
 
   border: 1px solid rgba(85, 210, 255, 0.35);
 
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-
+ 
   box-shadow:
     0 8px 30px rgba(0, 0, 0, 0.4),
     0 0 20px rgba(85, 230, 255, 0.05),
@@ -53,14 +52,13 @@
   background:
     linear-gradient(
       120deg,
-      rgba(85, 229, 255, 0.06),
+      rgba(85, 229, 255, 0.05),
       transparent 40%,
-      rgba(155, 108, 255, 0.05)
+      rgba(155, 108, 255, 0.04)
     );
 
   pointer-events: none;
 }
-
 
 /* Logo */
 

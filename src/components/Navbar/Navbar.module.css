@@ -215,6 +215,42 @@
   width: 100%;
 }
 
+.menuButton {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 0;
+
+  border: 1px solid rgba(85, 230, 255, 0.2);
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #55e6ff;
+
+  font-size: 1.1rem;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.menuButton:hover {
+  background: rgba(85, 230, 255, 0.08);
+
+  transform: scale(1.05);
+
+  color: #ffffff;
+}
 
 /* Mobile */
 
@@ -264,5 +300,23 @@
 
   .logo {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .navbar {
+    width: 94%;
+
+    min-height: 56px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .menuButton {
+    width: 36px;
+    height: 36px;
   }
 }

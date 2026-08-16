@@ -1,75 +1,76 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
-  House,
-  User,
-  Zap,
-  Rocket,
-  Mail
-} from "lucide-react";
+  FaHome,
+  FaUser,
+  FaCode,
+  FaFolderOpen,
+  FaEnvelope,
+  FaBars,
+  FaTimes
+} from "react-icons/fa";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
-  const [hidden, setHidden] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  useEffect(() => {
-    let lastScrollY = window.scrollY;
-
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
-
-      lastScrollY = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <nav
-      className={`${styles.navbar} glass ${
-        hidden ? styles.hidden : ""
-      }`}
-    >
-      <div className={styles.logo}>
-        AD
-      </div>
+    <nav className={styles.navbar}>
 
-      <div className={styles.links}>
-        <Link to="/">
-          <House size={18} />
+      <Link
+        to="/"
+        className={styles.logo}
+        onClick={closeMenu}
+      >
+        AD
+      </Link>
+
+      <button
+        className={styles.menuButton}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle navigation menu"
+        aria-expanded={menuOpen}
+      >
+        {menuOpen ? <FaTimes /> : <FaBars />}
+      </button>
+
+      <div
+        className={`${styles.links} ${
+          menuOpen ? styles.menuOpen : ""
+        }`}
+      >
+
+        <Link to="/" onClick={closeMenu}>
+          <FaHome />
           <span>Home</span>
         </Link>
 
-        <Link to="/about">
-          <User size={18} />
+        <Link to="/about" onClick={closeMenu}>
+          <FaUser />
           <span>About</span>
         </Link>
 
-        <Link to="/skills">
-          <Zap size={18} />
+        <Link to="/skills" onClick={closeMenu}>
+          <FaCode />
           <span>Skills</span>
         </Link>
 
-        <Link to="/projects">
-          <Rocket size={18} />
+        <Link to="/projects" onClick={closeMenu}>
+          <FaFolderOpen />
           <span>Projects</span>
         </Link>
 
-        <Link to="/contact">
-          <Mail size={18} />
+        <Link to="/contact" onClick={closeMenu}>
+          <FaEnvelope />
           <span>Contact</span>
         </Link>
-      </div>
+
+            </div>
+
     </nav>
   );
 }

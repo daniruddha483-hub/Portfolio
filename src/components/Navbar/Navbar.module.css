@@ -61,36 +61,45 @@
 }
 
 
-.logo {
-  position: relative;
+.footer-logo {
+  display: inline-flex;
 
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
   z-index: 1;
 
-  flex-shrink: 0;
-
   font-size: 1.05rem;
-
   font-weight: 800;
-
   letter-spacing: 3px;
 
   text-decoration: none;
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--accent-cyan),
-      var(--accent-blue),
-      var(--accent-violet)
-    );
+  background: linear-gradient(
+    90deg,
+    #4da6ff,
+    #3b82f6,
+    #8b5cf6
+  );
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 
   filter:
-    drop-shadow(
-      0 0 10px rgba(77, 166, 255, 0.25)
-    );
+    drop-shadow(0 0 10px rgba(77, 166, 255, 0.35));
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+.footer-bottom a:hover .footer-logo {
+  transform: translateY(-2px);
+
+  filter:
+    drop-shadow(0 0 14px rgba(77, 166, 255, 0.45))
+    drop-shadow(0 0 20px rgba(139, 92, 246, 0.25));
 }
 
 

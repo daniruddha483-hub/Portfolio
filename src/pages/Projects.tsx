@@ -127,7 +127,7 @@ function Projects() {
           </article>
 
 
-          {/* SHIVA GYM */}
+        
 
           <article className="project-card shiva-project">
 
@@ -162,7 +162,7 @@ function Projects() {
             </div>
 
             <a
-              href="https://VERCEL_APP_LINK"
+              href="https://shiva-multygym.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="project-link"

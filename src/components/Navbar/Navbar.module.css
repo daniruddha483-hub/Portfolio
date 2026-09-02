@@ -21,7 +21,7 @@
 
   z-index: 1000;
 
-  background: rgba(15, 25, 45, 0.96);
+  background: rgba(23, 39, 71, 0.96);
 
   border: 1px solid rgba(85, 210, 255, 0.35);
 
@@ -39,7 +39,6 @@
     box-shadow 0.3s ease;
 }
 
-
 .navbar::before {
   content: "";
 
@@ -49,19 +48,17 @@
 
   border-radius: inherit;
 
-  background:
-    linear-gradient(
-      120deg,
-      rgba(85, 229, 255, 0.05),
-      transparent 40%,
-      rgba(155, 108, 255, 0.04)
-    );
+  background: linear-gradient(
+    120deg,
+    rgba(85, 229, 255, 0.05),
+    transparent 40%,
+    rgba(155, 108, 255, 0.04)
+  );
 
   pointer-events: none;
 }
 
-
-.footer-logo {
+.logo {
   display: inline-flex;
 
   align-items: center;
@@ -72,36 +69,28 @@
 
   font-size: 1.05rem;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
 
   text-decoration: none;
 
-  background: linear-gradient(
-    90deg,
-    #4da6ff,
-    #3b82f6,
-    #8b5cf6
-  );
+  background: linear-gradient(90deg, #4da6ff, #3b82f6, #8b5cf6);
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
-  filter:
-    drop-shadow(0 0 10px rgba(77, 166, 255, 0.35));
+  filter: drop-shadow(0 0 10px rgba(77, 166, 255, 0.35));
 
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
 }
-.footer-bottom a:hover .footer-logo {
+.footer-bottom a:hover .logo {
   transform: translateY(-2px);
 
-  filter:
-    drop-shadow(0 0 14px rgba(77, 166, 255, 0.45))
+  filter: drop-shadow(0 0 14px rgba(77, 166, 255, 0.45))
     drop-shadow(0 0 20px rgba(139, 92, 246, 0.25));
 }
-
 
 .links {
   position: relative;
@@ -148,17 +137,13 @@
 
   color: var(--accent-cyan);
 
-  filter:
-    drop-shadow(
-      0 0 5px rgba(85, 230, 255, 0.5)
-    );
+  filter: drop-shadow(0 0 5px rgba(85, 230, 255, 0.5));
 
   transition:
     transform 0.3s ease,
     color 0.3s ease,
     filter 0.3s ease;
 }
-
 
 .links a:hover {
   color: var(--accent-cyan);
@@ -169,17 +154,10 @@
 .links a:hover svg {
   color: var(--accent-violet);
 
-  transform:
-    scale(1.15)
-    rotate(-5deg);
+  transform: scale(1.15) rotate(-5deg);
 
-  filter:
-    drop-shadow(
-      0 0 8px rgba(155, 108, 255, 0.7)
-    );
+  filter: drop-shadow(0 0 8px rgba(155, 108, 255, 0.7));
 }
-
-
 
 .links a::after {
   content: "";
@@ -196,24 +174,16 @@
 
   border-radius: 999px;
 
-  background:
-    linear-gradient(
-      90deg,
-      var(--accent-cyan),
-      var(--accent-blue)
-    );
+  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
 
-  box-shadow:
-    0 0 7px rgba(85, 230, 255, 0.65);
+  box-shadow: 0 0 7px rgba(85, 230, 255, 0.65);
 
-  transition:
-    width 0.3s ease;
+  transition: width 0.3s ease;
 }
 
 .links a:hover::after {
   width: 100%;
 }
-
 
 .menuButton {
   display: none;
@@ -252,9 +222,7 @@
   color: #ffffff;
 }
 
-
 @media (max-width: 700px) {
-
   .navbar {
     top: 10px;
 
@@ -267,7 +235,6 @@
     border-radius: 16px;
   }
 
-
   /* SHOW HAMBURGER */
 
   .menuButton {
@@ -277,7 +244,6 @@
 
     z-index: 10;
   }
-
 
   /* MOBILE MENU */
 
@@ -329,7 +295,6 @@
       visibility 0.25s ease;
   }
 
-
   .menuOpen {
     opacity: 1;
 
@@ -362,25 +327,21 @@
       color 0.2s ease;
   }
 
-
   .links a:hover {
     background: rgba(85, 230, 255, 0.07);
 
     transform: none;
   }
 
-
   .links a::after {
     display: none;
   }
-
 
   .links a svg {
     width: 17px;
 
     font-size: 17px;
   }
-
 
   .logo {
     font-size: 0.9rem;
@@ -389,9 +350,7 @@
   }
 }
 
-
 @media (max-width: 400px) {
-
   .navbar {
     width: 94%;
 

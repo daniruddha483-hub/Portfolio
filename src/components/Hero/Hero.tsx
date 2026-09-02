@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  FiArrowRight,
-  FiMail,
-} from "react-icons/fi";
+import { FiArrowRight, FiMail } from "react-icons/fi";
 
 import styles from "./Hero.module.css";
 import profileImage from "../../assets/images/profile.jpeg";
@@ -32,26 +29,18 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroContent}>
-
         <div className={styles.profileFrame}>
-          <img
-            src={profileImage}
-            alt="Aniruddha Dhota"
-          />
+          <img src={profileImage} alt="Aniruddha Dhota" />
         </div>
 
-        <p className={styles.welcome}>
-          Welcome to my digital space
-        </p>
+        <p className={styles.welcome}>Welcome to my digital space</p>
 
         <h1 className={styles.title}>
           Hi, I'm
           <span>Aniruddha Dhota</span>
         </h1>
 
-        <h2 className={styles.subtitle}>
-          Designer | Developer | Explorer
-        </h2>
+        <h2 className={styles.subtitle}>Designer | Developer | Explorer</h2>
 
         <p className={styles.description}>
           {displayText}
@@ -59,29 +48,18 @@ function Hero() {
         </p>
 
         <div className={styles.buttons}>
-          <Link
-            to="/projects"
-            className={`${styles.button} ${styles.primary}`}
-          >
+          <Link to="/projects" className={`${styles.button} ${styles.primary}`}>
             <span>View Projects</span>
 
-            <FiArrowRight
-              className={styles.buttonIcon}
-            />
+            <FiArrowRight className={styles.buttonIcon} />
           </Link>
 
-          <Link
-            to="/contact"
-            className={styles.button}
-          >
+          <Link to="/contact" className={styles.button}>
             <span>Contact Me</span>
 
-            <FiMail
-              className={styles.buttonIcon}
-            />
+            <FiMail className={styles.buttonIcon} />
           </Link>
         </div>
-
       </div>
     </section>
   );

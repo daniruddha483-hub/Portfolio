@@ -33,31 +33,31 @@
 }
 
 .footerLogo {
-  display: flex;
+  display: inline-flex;
 
   align-items: center;
   justify-content: center;
 
-  width: 44px;
-  height: 44px;
+  position: relative;
+  z-index: 1;
 
-  border-radius: 12px;
-
-  background: linear-gradient(
-    135deg,
-    rgba(85, 230, 255, 0.12),
-    rgba(155, 108, 255, 0.12)
-  );
-
-  border: 1px solid rgba(85, 230, 255, 0.2);
-
-  color: #55e6ff;
-
-  font-size: 0.85rem;
-
+  font-size: 1.05rem;
   font-weight: 800;
+  letter-spacing: 1px;
 
-  letter-spacing: 2px;
+  text-decoration: none;
+
+  background: linear-gradient(90deg, #4da6ff, #3b82f6, #8b5cf6);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  filter: drop-shadow(0 0 10px rgba(77, 166, 255, 0.35));
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
 }
 
 .footerBrand p {
